@@ -146,7 +146,6 @@ if( tie_get_postdata( 'tie_hide_share_'.$share_position ) == 'no' ||
 	if( is_array( $active_share_buttons ) && ! empty( $active_share_buttons ) ){ ?>
 		<div id="share-buttons-<?php echo esc_attr( $share_position ) ?>" class="share-buttons share-buttons-<?php echo esc_attr( $share_position ) ?>">			
 			<button class="toggle-share-links"><?php esc_html_e( 'Share article', TIELABS_TEXTDOMAIN ); ?></button>
-			<!-- <div id="share-overlay"><div> -->
 			<div class="share-links <?php echo esc_attr( $share_class ) ?>" style="display:none;">
 				<h2><?php esc_html_e( 'Share this story.', TIELABS_TEXTDOMAIN ); ?></h2>
 				<p><?php esc_html_e( 'If you liked this story, share it with other people.', TIELABS_TEXTDOMAIN ); ?></p>
@@ -174,6 +173,7 @@ if( tie_get_postdata( 'tie_hide_share_'.$share_position ) == 'no' ||
 				
 			</div><!-- .share-links /-->
 		</div><!-- .share-buttons /-->
+		<div id="share-overlay"></div>
 
 		<?php
 
